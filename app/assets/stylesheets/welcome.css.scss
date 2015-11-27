@@ -1,0 +1,91 @@
+#banner {
+	background-image: url(image_path("manzara.jpg"));
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	min-height: 500px;
+	display: table;
+	.banner_content {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		h1 {
+			@include bold_font;
+			color: #1F2324;
+			font-size: 3.5rem;
+			margin: 0;
+		}
+		p {
+			font-size: 2rem;
+			margin: 0 0 2.5rem 0;
+			color: rgba(250, 250, 250, 0.5);
+		}
+	}
+}
+
+#testimonial {
+	text-align: center;
+	font-size: 2rem;
+	color: #535A61;
+	padding: 3.5rem 0;
+	.quote {
+		margin: 0 0 .5rem 0;
+	}
+	.name {
+		@include bold_font;
+		color: $dark_gray;
+		margin: 0;
+		font-size: 1.2rem;
+	}
+}
+
+#callouts {
+	background-image: url(image_path("caliss.jpg"));
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 100%;
+	min-height: 400px;
+	display: table;
+	.callout_inner {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.callout {
+		text-align: center;
+		width: 33.3333%;
+		padding: 1.5rem 2.5%;
+		float: left;
+		i {
+			font-size: 2.5rem;
+			color: $green;
+		}
+		h2 {
+			@include bold_font;
+			color: #1F2324;
+			margin-bottom: 12px;
+		}
+		p {
+			font-size: 2rem;
+			color: #1F063D;
+
+		}
+	}
+}
+
+#bottom_cta {
+	text-align: center;
+	padding: 7.5rem 0;
+	h2 {
+		@include bold_font;
+		color: $dark_gray;
+		font-size: 3rem;
+		margin: 0;
+	}
+	p {
+			font-size: 1.75rem;
+			margin: 0 0 2.5rem 0;
+			color: #535A61;
+		}
+}
