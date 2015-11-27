@@ -1,5 +1,4 @@
 .wrapper_with_padding
-	#notes.clearfix
 	- unless @notes.blank?
 		- @notes.each do |note|
 			%a{ href: (url_for [note])}
